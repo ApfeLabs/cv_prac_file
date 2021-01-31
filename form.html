@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title>Bob's Forms Practice</title>
+</head>
+<body>
+	<button><a href="main1.html">Back</a></button>
+	<form >
+	<h1 id="welcome">Hi</h1>
+	<fieldset>
+		<label>Name: 
+			<input type="text" name="name" id="yourName" value ="name">
+		</label>
+		<button type="button" name="Submit" id="butt" onclick="bobby()">SUBMIT</button>
+	</fieldset>
+	<script>
+		function bobby() {
+			let dude = document.getElementById("yourName").value;
+			document.getElementById("welcome").innerHTML='Welcome home '+ dude;
+		}
+
+	</script>
+	
+</form>
+<form>
+	<h1 id="demo">Bon Jour</h1>
+	
+	<label>Enter name</label>
+	<input type="text" id="myName" value="name" >
+
+	<!--<input type="submit" name="Submit" >-->
+	<button type="button"  id="name" onclick="myButt()">SUBMIT</button>
+	<script>
+		
+		function myButt() {
+			let name=document.getElementById("myName").value;
+			document.getElementById("demo").innerHTML='Hello ' + name;
+			
+			alert("Welcome to the website,  " + name  )
+		}
+</script></form>
+
+<!--<form >
+	<label for="avatar">Choose a profile picture:</label>
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg, image/bmp">
+       
+
+</form>-->
+
+
+<!--
+<script>
+var customerName = prompt("Please enter your name", "<name goes here>");
+
+if (customerName!= null) {
+	 document.getElementById("welcome").innerHTML =
+    "Hello " + customerName + "! How are you today?";
+}
+else {
+   
+    alert('Please enter a name.');
+}
+</script>-->
+
+
+
+<!--
+<form>
+	<input type="file" capture="camera" name="camera" value="camera">
+	<button value="SUBMIT" name="SUBMIT" onclick="cam()">SUBMIT</button>
+<script >
+	function cam() {
+		var cam_play = document.getElementById('camera')
+		document.window('camera')
+	}
+</script>	
+</form>
+
+<script src="scripts/main.js"></script>-->
+
+
+</body>
+</html>
